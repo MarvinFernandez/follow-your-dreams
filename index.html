@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Follow Your Dreams — Digital Experience, Collection 001">
+  <title>Location Not Found</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section id="error-scene" class="error-scene" aria-label="404 error">
+    <main class="error-content">
+      <div class="error-icon" aria-hidden="true">
+        <span class="error-eye"></span>
+        <span class="error-eye"></span>
+        <span class="error-mouth"></span>
+      </div>
+      <h1>This site can’t be reached</h1>
+      <p>The webpage at this address could not be found.</p>
+      <p class="error-code">HTTP ERROR 404</p>
+    </main>
+  </section>
+
+  <div id="transition-flash" class="transition-flash" aria-hidden="true"></div>
+  <p id="error-echo" class="error-echo" aria-hidden="true">HTTP ERROR 404</p>
+
+  <main id="experience" class="experience" aria-hidden="true">
+    <div class="map-background" aria-hidden="true"></div>
+    <div class="map-overlay" aria-hidden="true"></div>
+
+    <section class="scene scene-intro" id="scene-intro">
+      <div class="scene-content intro-message">
+        <p class="eyebrow">Location not found</p>
+        <button id="coordinates" class="coordinates" type="button" aria-label="Copy impossible coordinates" title="Copy coordinates">
+          <span>91°00′00″N</span>
+          <span>181°00′00″E</span>
+        </button>
+        <p class="body-copy">No place exists at these coordinates</p>
+        <p id="copy-feedback" class="copy-feedback" role="status" aria-live="polite">Coordinates copied</p>
+      </div>
+
+      <div class="scene-content reflection-message" aria-hidden="true">
+        <h2>The places that matter<br>do not appear on maps</h2>
+      </div>
+
+      <button id="scroll-cue" class="scroll-cue" type="button" aria-label="Continue the journey">
+        <span>Continue</span>
+        <span class="arrow" aria-hidden="true">↓</span>
+      </button>
+    </section>
+
+    <section class="scene scene-journey" id="scene-journey">
+      <div class="route-wrap" aria-hidden="true">
+        <svg class="route-svg" viewBox="0 0 500 900" role="presentation">
+          <path id="route-path" d="M250 850 C175 790 335 730 245 660 C150 585 360 535 270 455 C180 375 345 315 240 230 C190 190 250 125 250 55"/>
+          <path class="route-star" d="M250 37 L255 50 L269 55 L255 60 L250 74 L245 60 L231 55 L245 50 Z"/>
+        </svg>
+      </div>
+
+      <div class="scene-content journey-copy reveal-on-scroll">
+        <p>The destination gives you direction</p>
+        <p>The detours give the journey meaning</p>
+      </div>
+    </section>
+
+    <section class="scene scene-finale" id="scene-finale">
+      <div class="scene-content finale-copy reveal-on-scroll">
+        <p class="final-kicker">Collection 001</p>
+        <h2>Leave room<br>for detours</h2>
+        <div class="collection-mark" aria-label="Follow Your Dreams Collection 001">
+          <span class="brand-name">Follow Your Dreams</span>
+          <span class="collection-number">Collection 001</span>
+        </div>
+        <p class="signature">Craft Your Purpose</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
