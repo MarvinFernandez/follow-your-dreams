@@ -54,7 +54,15 @@ button { font: inherit; }
 /* Shared map stage */
 .experience { position: relative; min-height: 100svh; background: var(--parchment); opacity: 0; visibility: hidden; transition: opacity 1500ms ease; }
 .experience.is-visible { opacity: 1; visibility: visible; }
-.map-background, .map-overlay { position: fixed; inset: 0; pointer-events: none; }
+.map-background, .map-overlay {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  height: 100lvh;
+  pointer-events: none;
+}
 .map-background {
   z-index: 0;
   background-color: var(--parchment);
@@ -114,6 +122,7 @@ button { font: inherit; }
 
 @media (min-width: 760px) {
   .error-content { transform: translateY(-3vh); }
+  .map-background, .map-overlay { top: 0; height: auto; }
   .map-background { background-size: auto 96vh; background-position: center bottom; }
   .route-svg { width: min(38vw, 430px); }
   .journey-copy { padding: 3rem; }
